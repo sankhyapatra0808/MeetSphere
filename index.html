@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Conferencing</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile-picture-container">
+        <img
+          id="profile-picture"
+          class="profile-picture"
+          alt="Profile Picture"
+        />
+      </div>
+      <h1 class="title">Welcome to MeetSphere</h1>
+      <p class="subtitle">Connect with anyone, anywhere, anytime.</p>
+      <button class="start-button" id="start-button">Get Started</button>
+      <script>
+        document
+          .getElementById("start-button")
+          .addEventListener("click", function () {
+            if (window.innerWidth < 760) {
+              // Load the mobile version of the login page
+              window.location.href =
+                "/loginpage_for_phones/login_signup_phone.html";
+            } else {
+              // Load the desktop version of the login page
+              window.location.href = "/loginpage/login_signup.html";
+            }
+          });
+      </script>
+    </div>
+  </body>
+</html>
