@@ -9,5 +9,5 @@ document.getElementById('send-reset-link').addEventListener('click', function() 
 });
 
 document.getElementById('back-to-login').addEventListener('click', function() {
-    window.location.href = '/loginpage/login_signup.html';
+    window.location.href = 'loginpage/login_signup.html';
 });
